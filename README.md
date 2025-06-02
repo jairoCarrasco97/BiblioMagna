@@ -1,6 +1,6 @@
 # Hola! 👋
 
-Este es un proyecto personal básico con Back-End en Java + MySql y Front-End con HTML + CSS.
+Este es un proyecto personal básico con Back-End (Java + MySql) y Front-End (HTML + CSS).
 
 Incluye lógica, organización de estructuras, consultas con JBDC (sistema CRUD) y logo propio generado con Photoshop (básico).
 
