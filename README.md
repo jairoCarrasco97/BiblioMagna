@@ -2,7 +2,7 @@
 
 Este es un proyecto personal básico con Back-End (Java + MySql) y Front-End (HTML + CSS).
 
-Incluye lógica, organización de estructuras, consultas con JBDC (sistema CRUD) y logo propio generado con Photoshop (básico).
+Incluye lógica, organización de estructuras, consultas con JBDC (sistema CRUD) y logo propio generado con Photoshop.
 
 <p align="center">
   <img src="images/BiblioMagna_logo.png" alt="Logo web BiblioMagna simple" width="400"/>
