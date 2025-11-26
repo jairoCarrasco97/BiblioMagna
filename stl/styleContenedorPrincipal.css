@@ -3,6 +3,7 @@
     flex-direction: row;
     gap: 1rem;
 }
+
 #menu-izq {
     margin: 2vw 0 0 3vw;
     font-family: 'Anton', sans-serif;
@@ -13,14 +14,17 @@
     font-size: 3em;
     padding: 6vw 3vw 0 3vw;
 }
+
 #menu-izq ul {
     list-style-type: none;
     padding: 0;
 }
+
 #menu-izq ul li {
     margin: 2rem 0;
     cursor: pointer;
 }
+
 #showcase {
     margin: 2vw 0 0 0;
     display: grid;
@@ -45,13 +49,15 @@
     background-position: 100% 80%;
     display: flex;
     flex-direction: column;
-    aspect-ratio: 55/34;  /* Número áureo aproximado */
+    aspect-ratio: 55/34;
+    /* Número áureo aproximado */
     padding: 0.5rem;
     border-radius: 8px;
     overflow: hidden;
     word-break: break-word;
     transition: background 0.5s ease, transform 0.3s ease;
 }
+
 .imagen-tarjeta img {
     background-size: cover;
     background-position: center;
@@ -63,16 +69,19 @@
     object-fit: cover;
     transition: 0.3s ease;
 }
+
 .info-tarjeta {
     display: flex;
     flex-direction: column;
 
 }
+
 .info-libro {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
+
 .precio {
     text-align: center;
     background-size: 200% 200%;
@@ -81,6 +90,7 @@
     font-size: 2em;
     transition: background 0.5s ease, transform 0.3s ease;
 }
+
 .descuento {
     position: absolute;
     margin: 36% 0 0 80%;
@@ -94,6 +104,7 @@
     font-style: normal;
     font-variant: normal;
 }
+
 .icono-oferta {
     position: absolute;
     margin: 27% 0 0 61%;
@@ -101,6 +112,7 @@
     transform: rotate(50deg);
     opacity: 0.8;
 }
+
 .icono-bestseller {
     position: absolute;
     margin: 3.8% 0 0 10%;
@@ -109,46 +121,56 @@
     z-index: +1;
     filter: drop-shadow(-5px 10px 10px rgba(0, 0, 0, 1));
 }
+
 .tarjeta:hover {
     background-position: 50% 15%;
     transform: scale(1.15);
 }
+
 #menu-izq ul li:hover {
-    transition: 0.2s ;
+    transition: 0.2s;
     transform: scale(1.2);
     background: linear-gradient(90deg, #656565, #65ce6a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 0px 20px rgba(8, 212, 93, 0.7);
 }
+
 .tarjeta:hover .titulo {
     transition: 0.5s ease-out;
 }
+
 .tarjeta:hover .precio {
     transform: scale(1.3);
     transition: 0.2s ease;
 }
+
 .tarjeta:hover .imagen-tarjeta img {
     margin-top: 1em;
     transform: scale(1.15);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
 }
+
 .tarjeta:hover .oferta {
     animation: precioRebote 1s ease infinite;
 }
+
 .tarjeta:hover .compra-oferta {
     transform: scale(0.8);
     transition: 0.2s ease;
 }
+
 .tarjeta:hover .icono-oferta {
     transition: 0.3s ease;
     transform: scale(1.2) rotate(360deg);
 }
+
 .tarjeta:hover .descuento {
     transition: 0.3s ease;
     transform: scale(1.6) rotate(-10deg);
     margin: 33% 0 0 73%;
 }
+
 .tarjeta:hover .icono-bestseller {
     margin: .4% 0 0 10%;
     transition: 0.3s ease;
@@ -156,12 +178,14 @@
     animation: brillo 1s ease infinite;
     filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 1));
 }
+
 #pagination {
     display: flex;
     justify-content: center;
     margin: 2vw 0;
     gap: 0.5em;
 }
+
 .titulo {
     margin: 10% 0 0 42%;
     position: absolute;
@@ -177,6 +201,7 @@
     text-transform: none;
     z-index: +1;
 }
+
 .autor {
     margin: 7% 0 0 42%;
     position: absolute;
@@ -191,6 +216,7 @@
     font-variant: normal;
     text-transform: none;
 }
+
 .compra {
     position: absolute;
     margin: 40% 0 0 50%;
@@ -205,6 +231,7 @@
     font-style: normal;
     font-variant: normal;
 }
+
 .compra-oferta {
     position: absolute;
     margin: 33% 0 0 41%;
@@ -218,6 +245,7 @@
     font-variant: normal;
     text-decoration: line-through;
 }
+
 .oferta {
     position: absolute;
     margin: 38% 0 0 40%;
@@ -232,16 +260,101 @@
 }
 
 @keyframes precioRebote {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.2);}
-    100% {transform: scale(1);}
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes brillo {
-    0% {filter: brightness(1);}
-    50% {filter: brightness(1.2);}
-    100% {filter: brightness(1);}
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(1.2);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
 }
 
+/* ========================================
+   RESPONSIVE - MÓVIL
+   ======================================== */
 
+@media (max-width: 768px) {
 
+    /* Contenedor principal en columna */
+    #contenedor-principal {
+        flex-direction: row;
+    }
+
+    /* Menú lateral más pequeño */
+    #menu-izq {
+        margin: 0vw;
+        padding: 1vw;
+        font-size: 2em;
+    }
+
+    /* Tarjetas una debajo de otra */
+    #showcase {
+        grid-template-columns: 1fr;
+        /* Una sola columna */
+        gap: 2rem;
+        padding: 0 2vw;
+    }
+
+    /* Tarjetas más grandes en móvil */
+    .tarjeta {
+        max-width: 50%;
+        min-width: 20%;
+        margin: 0 0 0 0;
+    }
+
+    /* Ajustar tamaños de fuente */
+    .titulo {
+        font-size: 4vw;
+    }
+
+    .autor {
+        font-size: 2.5vw;
+    }
+
+    .compra {
+        font-size: 180%;
+    }
+
+    .oferta {
+        font-size: 180%;
+    }
+
+    .compra-oferta {
+        font-size: 3vw;
+    }
+
+    /* Iconos más pequeños */
+    .icono-oferta {
+        width: 15vw;
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles en vertical) */
+@media (max-width: 480px) {
+    #menu-izq {
+        font-size: 1.5em;
+    }
+
+    .tarjeta {
+        aspect-ratio: 16/10;
+        /* Más horizontal en móviles pequeños */
+    }
+}
