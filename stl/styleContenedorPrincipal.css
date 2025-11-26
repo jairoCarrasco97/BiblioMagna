@@ -295,7 +295,7 @@
 
     /* Contenedor principal en columna */
     #contenedor-principal {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     /* Menú lateral más pequeño */
@@ -303,6 +303,12 @@
         margin: 0vw;
         padding: 1vw;
         font-size: 2em;
+    }
+
+    #menu-izq ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
     }
 
     /* Tarjetas una debajo de otra */
@@ -315,9 +321,9 @@
 
     /* Tarjetas más grandes en móvil */
     .tarjeta {
-        max-width: 50%;
-        min-width: 20%;
-        margin: 0 0 0 0;
+        max-width: 80%;
+        min-width: 70%;
+        margin: auto
     }
 
     /* Ajustar tamaños de fuente */

@@ -1,12 +1,14 @@
 body {
     background-image: url(../img/fondo_papel_body.png);
 }
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px 20px;
 }
+
 #img-inicio img {
     position: absolute;
     top: 3%;
@@ -16,46 +18,67 @@ header {
     align-content: center;
     transition: rotate(360deg) 0.2s ease;
 }
+
 .logo2 {
     opacity: 0;
 }
+
 .logo1:hover {
     opacity: 0;
 }
+
 .logo2:hover {
     opacity: 1;
     transition: 1s;
-    transform:rotate(360deg);
+    transform: rotate(360deg);
 }
+
 #inicio {
     display: flex;
     align-items: center;
 }
+
 #slider-inicio {
     margin: 0 0 0 25vw;
     font-size: 2.5em;
 }
+
 #slider-inicio h1 {
     margin: 0;
     font-size: 1.9em;
 }
+
 #slider {
     height: 1.9em;
     line-height: 1.9em;
     overflow: hidden;
 }
+
 #slider span {
     font-size: 2em;
     display: block;
     color: rgb(118, 181, 113);
     animation: animationWord 5s infinite;
 }
+
 @keyframes animationWord {
-    0% {transform: translateY(0%);}
-    30% {transform: translateY(0%);}
-    70% {transform: translateY(-105%);}
-    100% {transform: translateY(0%);}
+    0% {
+        transform: translateY(0%);
+    }
+
+    30% {
+        transform: translateY(0%);
+    }
+
+    70% {
+        transform: translateY(-105%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
+
 #buscador {
     margin-right: 3vw;
     padding: 8px;
@@ -63,6 +86,7 @@ header {
     border: 1px solid #2c2c2c;
     border-radius: 20px;
 }
+
 #carrito {
     margin-right: 2vw;
     width: 2vw;
@@ -70,4 +94,41 @@ header {
     border-radius: 100%;
     padding: 4px;
     height: auto;
+}
+
+/* ========================================
+   RESPONSIVE - MÓVIL
+   ======================================== */
+
+@media (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: rgb(52, 73, 64);
+    }
+
+    #img-inicio img {
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        width: 30vw;
+        height: auto;
+        align-content: center;
+        transition: rotate(360deg) 0.2s ease;
+    }
+
+    #slider-inicio {
+        margin: 0 0 0 25vw;
+        font-size: 200%;
+    }
+
+    #slider-inicio h1 {
+        margin: 0;
+        font-size: 1.9em;
+    }
+
+    #slider {
+        height: 1.9em;
+        line-height: 1.9em;
+        overflow: hidden;
+    }
 }
