@@ -106,10 +106,13 @@ header {
         background: linear-gradient(45deg, #15014e, #000120);
     }
 
+    header {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
     #img-inicio img {
-        position: absolute;
-        top: 5%;
-        left: 2%;
         width: 30vw;
         height: auto;
         align-content: center;
@@ -117,8 +120,8 @@ header {
     }
 
     #slider-inicio {
-        margin: 0 0 0 25vw;
-        font-size: 150%;
+        margin: 2vw 0 0 -15vw;
+        font-size: 120%;
     }
 
     #slider span {
