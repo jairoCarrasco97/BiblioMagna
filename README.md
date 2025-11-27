@@ -14,6 +14,7 @@ Lenguajes utilizados:
 Tecnologías usadas:
 🛠️ Editor de código: VSCode / Google Antigravity
 🖼️ Imagen: Photoshop
+🪄Desplegado: GitHub Pages
 
 Nota: En los archivos iniciales existe lógica de servelts y DAO para BackEnd con Java y MySQL. Los datos originales estarían en una base de datos.
 <p>
