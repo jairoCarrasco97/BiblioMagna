@@ -9,11 +9,13 @@
     height: auto;
     transition: transform 0.3s ease, margin-top 0.3s ease;
 }
+
 .info-item {
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
 }
+
 .titulo-item {
     font-family: 'Anton', sans-serif;
     font-size: 4vw;
@@ -23,11 +25,13 @@
     -webkit-text-fill-color: transparent;
     margin: 1vw 0 0 6vw;
 }
+
 .autor-item {
     font-size: 1.5vw;
     margin: 1vw 0 0 6vw;
     color: #555555;
 }
+
 .descripcion-item {
     font-size: 1.2vw;
     margin: 1vw 0 0 6vw;
@@ -35,10 +39,30 @@
     text-align: justify;
     max-width: 35vw;
 }
+
 .precio-item {
     font-size: 3vw;
     margin: 1vw 0 0 20vw;
     background: linear-gradient(180deg, #357a38, #8381c7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+
+    .imagen-item img {
+        width: 35vw;
+    }
+
+    .titulo-item {
+        font-size: 8vw;
+    }
+
+    .autor-item {
+        font-size: 6vw;
+    }
+
+    .descripcion-item {
+        font-size: 3vw;
+    }
 }
