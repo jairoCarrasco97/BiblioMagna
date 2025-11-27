@@ -102,8 +102,10 @@ header {
 
 @media (max-width: 768px) {
     body {
-        background-image: none;
-        background: linear-gradient(45deg, #15014e, #000120);
+        background-image: url(../img/fondoMovil.png);
+        background-size: 100% auto;
+        background-repeat: repeat-y;
+        background-position: top center;
     }
 
     header {

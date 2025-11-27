@@ -301,7 +301,6 @@
     /* Menú lateral más pequeño */
     #menu-izq {
         margin: auto;
-        padding: 1vw;
         background: linear-gradient(90deg, #656565, #9a9a9a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -310,7 +309,7 @@
     #menu-izq ul {
         display: flex;
         flex-direction: row;
-        gap: 0.5em;
+        gap: 1em;
         font-size: 6vw;
     }
 
@@ -325,6 +324,7 @@
     /* Tarjetas más grandes en móvil */
     .tarjeta {
         background: linear-gradient(45deg, #332b47, #464e55);
+        opacity: 0.5;
         max-width: 80%;
         min-width: 70%;
         margin: auto
@@ -358,7 +358,7 @@
     #menu-izq ul li:hover {
         transition: 0.2s;
         transform: scale(1.2);
-        background: linear-gradient(90deg, #1a1a1a, #d9d9d9);
+        background: linear-gradient(90deg, #484848, #d9d9d9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: 0px 0px 20px rgba(33, 24, 201, 0.7);
