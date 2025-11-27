@@ -117,16 +117,16 @@ header {
     #img-inicio img {
         left: 50%;
         transform: translateX(-50%);
-        width: 50%;
-        margin: 10vw auto 0 auto;
+        width: 250px;
+        margin: 0vw auto 0 auto;
     }
 
     .logo2 {
-        animation: rotacionContinua 5s linear infinite;
+        animation: rotacionContinua 8s linear infinite;
     }
 
     .logo1 {
-        animation: rotacionFix 5s linear infinite;
+        animation: rotacionFix 8s linear infinite;
     }
 
     #slider-inicio {
@@ -137,15 +137,19 @@ header {
     }
 
     #slider span {
-        color: rgb(118, 97, 237);
-        text-shadow: 0px 0px 15px rgba(89, 0, 255, 0.8);
+        background: linear-gradient(45deg, #0037ff, #00eaff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
     }
 
     #slider-inicio h1 {
         margin: 0;
         font-size: 1.9em;
-        color: #3e3a52;
-        text-shadow: 0px 0px 8px rgba(89, 0, 255, 0.5);
+        background: linear-gradient(45deg, #0037ff, #00eaff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
     }
 
     .LaGranBiblioteca {
@@ -174,12 +178,12 @@ header {
             opacity: 0;
         }
 
-        20% {
+        5% {
             transform: translateX(-50%) rotate(700deg);
-            opacity: 0.9;
+            opacity: 0.5;
         }
 
-        80% {
+        90% {
             transform: translateX(-50%) rotate(740deg);
             opacity: 0.3;
         }
@@ -193,24 +197,57 @@ header {
     @keyframes rotacionFix {
         0% {
             transform: translateX(-50%) rotate(0deg);
+            opacity: 0.8;
+        }
+
+        4% {
+            transform: translateX(-50%) rotate(0deg);
+            opacity: 0.8;
+        }
+
+        5% {
+            transform: translateX(-50%) rotate(720deg);
+            opacity: 0;
+        }
+
+        47% {
+            transform: translateX(-50%) rotate(720deg);
+            opacity: 0;
+        }
+
+        48% {
+            transform: translateX(-50%) rotate(720deg);
+            opacity: 1;
+        }
+
+        49% {
+            transform: translateX(-50%) rotate(720deg);
+            opacity: 0;
+        }
+
+        50% {
+            transform: translateX(-50%) rotate(720deg);
+            opacity: 0;
+        }
+
+        51% {
+            transform: translateX(-50%) rotate(720deg);
+            opacity: 1;
+        }
+
+        52% {
+            transform: translateX(-50%) rotate(720deg);
+            opacity: 0;
+        }
+
+        90% {
+            transform: translateX(-50%) rotate(720deg);
             opacity: 0.2;
-        }
-
-        19% {
-            transform: translateX(-50%) rotate(700deg);
-        }
-
-        20% {
-            transform: translateX(-50%) rotate(700deg);
-        }
-
-        80% {
-            transform: translateX(-50%) rotate(740deg);
         }
 
         100% {
-            transform: translateX(-50%) rotate(1300deg);
-            opacity: 0.2;
+            transform: translateX(-50%) rotate(780deg);
+            opacity: 0.1;
         }
     }
 }
