@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "autor": "Gabriel García Márquez",
+        "autor": "Gabriel García",
         "genero": "Realismo mágico",
         "oferta": 0,
         "titulo": "Cien años de soledad",
@@ -57,7 +57,7 @@
     },
     {
         "id": 5,
-        "autor": "Fiódor Dostoyevski",
+        "autor": "Fiódor",
         "genero": "Novela psicológica",
         "oferta": 0,
         "titulo": "Crimen y castigo",
