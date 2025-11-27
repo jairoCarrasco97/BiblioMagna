@@ -17,7 +17,7 @@ Tecnologías usadas:
 
 Nota: En los archivos iniciales existe lógica de servelts y DAO para BackEnd con Java y MySQL. Los datos originales estarían en una base de datos.
 <p>
-  <img src="img/capturaPC.png" alt="Captura_de_pantalla" width="300"/>
+  <img src="img/capturaPC.png" alt="Captura_de_pantalla" width="600"/>
   <img src="img/capturaMovil.png" alt="Captura_de_pantalla" width="300"/>
 </p>
 
