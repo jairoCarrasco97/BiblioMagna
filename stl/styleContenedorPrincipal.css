@@ -300,7 +300,7 @@
 
     /* Menú lateral más pequeño */
     #menu-izq {
-        margin: 0vw;
+        margin: auto;
         padding: 1vw;
         font-size: 2em;
         background: linear-gradient(90deg, #656565, #9a9a9a);

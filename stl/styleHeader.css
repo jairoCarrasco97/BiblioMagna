@@ -123,8 +123,8 @@ header {
     #slider-inicio {
         position: absolute;
         top: 7%;
-        left: 15%;
-        font-size: 90%;
+        left: 10%;
+        font-size: 120%;
     }
 
     #slider span {
