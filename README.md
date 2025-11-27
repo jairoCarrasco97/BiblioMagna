@@ -3,7 +3,7 @@
 Este repositorio contiene un proyecto personal. BiblioMagna. Consiste en una web simple de venta de libros. Marca y logos propios.
 Esta es una Web responsive ideada tanto para móviles o PC. Añade animaciones y hover.
 
-# ¡Entra ya! 👉https://jairocarrasco97.github.io/BiblioMagna/👈
+# ¡Entra ya! 👉[https://jairocarrasco97.github.io/BiblioMagna/](https://jairocarrasco97.github.io/BiblioMagna/)👈
 
 
 Lenguajes utilizados:
