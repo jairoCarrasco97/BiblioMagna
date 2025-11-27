@@ -115,13 +115,25 @@ header {
     }
 
     #img-inicio img {
-        width: 25vw;
-        margin: 10vw auto;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        margin: 10vw auto 0 auto;
+    }
+
+    .logo2 {
+        animation: rotacionContinua 5s linear infinite;
+    }
+
+    .logo1 {
+        animation: rotacionFix 5s linear infinite;
     }
 
     #slider-inicio {
         display: block;
-        font-size: 5vw;
+        font-size: 5.5vw;
+        margin: 10vw auto;
+        z-index: +1;
     }
 
     #slider span {
@@ -147,15 +159,58 @@ header {
     }
 
     #buscador {
-        display: flex;
-        flex-direction: column;
+        position: absolute;
+        top: 10vw;
         align-items: center;
-        margin: 0 0 0 0;
         width: 80vw;
         padding: 8px;
         font-size: 0.8em;
         border-radius: 20px;
     }
 
-    #carrito {}
+    @keyframes rotacionContinua {
+        0% {
+            transform: translateX(-50%) rotate(0deg);
+            opacity: 0;
+        }
+
+        20% {
+            transform: translateX(-50%) rotate(700deg);
+            opacity: 0.9;
+        }
+
+        80% {
+            transform: translateX(-50%) rotate(740deg);
+            opacity: 0.3;
+        }
+
+        100% {
+            transform: translateX(-50%) rotate(1300deg);
+            opacity: 0;
+        }
+    }
+
+    @keyframes rotacionFix {
+        0% {
+            transform: translateX(-50%) rotate(0deg);
+            opacity: 0.2;
+        }
+
+        19% {
+            transform: translateX(-50%) rotate(700deg);
+        }
+
+        20% {
+            transform: translateX(-50%) rotate(700deg);
+        }
+
+        80% {
+            transform: translateX(-50%) rotate(740deg);
+        }
+
+        100% {
+            transform: translateX(-50%) rotate(1300deg);
+            opacity: 0.2;
+        }
+    }
 }

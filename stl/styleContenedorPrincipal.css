@@ -300,7 +300,7 @@
 
     /* Menú lateral más pequeño */
     #menu-izq {
-        margin: auto;
+        margin: -30vw 0 0 0;
         background: linear-gradient(90deg, #656565, #9a9a9a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
