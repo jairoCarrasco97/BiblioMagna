@@ -113,18 +113,17 @@ header {
     }
 
     #img-inicio img {
-        max-width: 30vw;
-        min-width: 25vw;
-        height: auto;
+        width: 22vw;
         align-content: center;
         transition: rotate(360deg) 0.2s ease;
     }
 
     #slider-inicio {
         position: absolute;
-        top: 7%;
-        left: 10%;
-        font-size: 140%;
+        top: 7vw;
+        left: 27%;
+        transform: translateX(-50%);
+        font-size: 4.8vw;
     }
 
     #slider span {
