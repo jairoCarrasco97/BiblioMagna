@@ -303,6 +303,9 @@
         margin: 0vw;
         padding: 1vw;
         font-size: 2em;
+        background: linear-gradient(90deg, #656565, #9a9a9a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     #menu-izq ul {
@@ -321,6 +324,7 @@
 
     /* Tarjetas más grandes en móvil */
     .tarjeta {
+        background: linear-gradient(45deg, #332b47, #464e55);
         max-width: 80%;
         min-width: 70%;
         margin: auto
@@ -328,28 +332,36 @@
 
     /* Ajustar tamaños de fuente */
     .titulo {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .autor {
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
 
     .compra {
-        font-size: 180%;
+        font-size: 8vw;
     }
 
     .oferta {
-        font-size: 180%;
+        font-size: 8vw;
     }
 
     .compra-oferta {
         font-size: 3vw;
     }
 
-    /* Iconos más pequeños */
     .icono-oferta {
-        width: 15vw;
+        width: 30vw;
+    }
+
+    #menu-izq ul li:hover {
+        transition: 0.2s;
+        transform: scale(1.2);
+        background: linear-gradient(90deg, #1a1a1a, #d9d9d9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 0px 20px rgba(33, 24, 201, 0.7);
     }
 }
 
