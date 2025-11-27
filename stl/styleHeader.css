@@ -113,17 +113,13 @@ header {
     }
 
     #img-inicio img {
-        width: 22vw;
-        align-content: center;
-        transition: rotate(360deg) 0.2s ease;
+        width: 25vw;
+        margin: 10vw auto;
     }
 
     #slider-inicio {
-        position: absolute;
-        top: 7vw;
-        left: 27%;
-        transform: translateX(-50%);
-        font-size: 10vw;
+        display: block;
+        font-size: 5.5vw;
     }
 
     #slider span {
@@ -150,17 +146,14 @@ header {
 
     #buscador {
         display: flex;
-        position: absolute;
         flex-direction: column;
+        align-items: center;
+        margin: 0 0 0 0;
         width: 80vw;
-        top: 31%;
-        left: 6%;
         padding: 8px;
         font-size: 0.8em;
         border-radius: 20px;
     }
 
-    #carrito {
-        position: absolute;
-    }
+    #carrito {}
 }

@@ -302,7 +302,6 @@
     #menu-izq {
         margin: auto;
         padding: 1vw;
-        font-size: 2em;
         background: linear-gradient(90deg, #656565, #9a9a9a);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -311,7 +310,8 @@
     #menu-izq ul {
         display: flex;
         flex-direction: row;
-        gap: 1em;
+        gap: 0.5em;
+        font-size: 6vw;
     }
 
     /* Tarjetas una debajo de otra */
