@@ -154,10 +154,14 @@ header {
         position: absolute;
         flex-direction: column;
         width: 80vw;
-        top: 25%;
+        top: 31%;
         left: 6%;
         padding: 8px;
         font-size: 0.8em;
         border-radius: 20px;
+    }
+
+    #carrito {
+        position: absolute;
     }
 }
