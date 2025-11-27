@@ -108,7 +108,7 @@ header {
 
     header {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
@@ -120,7 +120,7 @@ header {
     }
 
     #slider-inicio {
-        margin: 2vw 0 0 0;
+        margin: 0 auto 0 auto;
         font-size: 90%;
     }
 
