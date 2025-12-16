@@ -39,8 +39,9 @@ header {
 }
 
 #slider-inicio {
-    margin: 0 0 0 25vw;
-    font-size: 2.5em;
+    display: block;
+    margin: 0 auto;
+    font-size: 3vw;
 }
 
 #slider-inicio h1 {

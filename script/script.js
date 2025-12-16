@@ -165,6 +165,11 @@ function renderBestsellers(pageBestsellers) {
 const menuBestseller = document.getElementById('menu-best-sellers');
 menuBestseller.addEventListener('click', () => { renderBestsellers(1); });
 
+function renderConocenos() {
+    showcase.innerHTML = '';
+
+}
+
 // Función para renderizar los botones de páginas
 
 function renderPagination(listaLibros, renderFn) {
