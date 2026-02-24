@@ -2,7 +2,7 @@ const showcase = document.getElementById('showcase');
 const paginationContainer = document.getElementById('pagination');
 
 let currentPage = 1;
-const itemsPerPage = 8;
+const itemsPerPage = 6;
 let librosData = [];
 
 // Cargar datos desde el archivo JSON

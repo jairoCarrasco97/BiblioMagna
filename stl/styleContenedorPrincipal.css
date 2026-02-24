@@ -11,7 +11,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-radius: 20px;
-    font-size: 3em;
+    font-size: 3vw;
     padding: 6vw 3vw 0 3vw;
 }
 
@@ -21,14 +21,14 @@
 }
 
 #menu-izq ul li {
-    margin: 2rem 0;
+    margin: 1vw 2vw 0 0;
     cursor: pointer;
 }
 
 #showcase {
     margin: 2vw 0 0 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18vw, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
 }
 
@@ -41,10 +41,9 @@
 
 .tarjeta {
     position: relative;
-    margin: 0.5rem;
-    max-width: 20vw;
-    min-width: 15vw;
-    background-image: url("../img/fondo_papel.svg");
+    margin: 1vw 1vw 1vw 1vw;
+    width: 17vw;
+    background-image: url("../img/fondo_papel.png");
     background-size: 200% 200%;
     background-position: 100% 80%;
     display: flex;
@@ -79,7 +78,7 @@
 .info-libro {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    width: 90%;
 }
 
 .precio {
@@ -146,7 +145,6 @@
 }
 
 .tarjeta:hover .imagen-tarjeta img {
-    margin-top: 1em;
     transform: scale(1.15);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
 }
@@ -172,9 +170,9 @@
 }
 
 .tarjeta:hover .icono-bestseller {
-    margin: .4% 0 0 10%;
+    margin: 3.2% 0 0 9%;
     transition: 0.3s ease;
-    transform: scale(1.20);
+    transform: scale(1.25);
     animation: brillo 1s ease infinite;
     filter: drop-shadow(-5px 8px 4px rgba(0, 0, 0, 1));
 }

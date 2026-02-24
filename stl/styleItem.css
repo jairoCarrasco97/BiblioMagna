@@ -5,7 +5,7 @@
 
 .imagen-item img {
     margin: 1vw 0 0 7vw;
-    width: 18vw;
+    width: 15vw;
     height: auto;
     transition: transform 0.3s ease, margin-top 0.3s ease;
 }
@@ -14,36 +14,55 @@
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
+    width: 35vw;
 }
 
 .titulo-item {
     font-family: 'Anton', sans-serif;
-    font-size: 4vw;
+    font-size: 3vw;
     font-style: normal;
-    background: linear-gradient(180deg, #357a38, #81c784);
+    background: linear-gradient(180deg, #0c384d, #1b7aa7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 1vw 0 0 6vw;
 }
 
 .autor-item {
-    font-size: 1.5vw;
+    font-size: 1vw;
     margin: 1vw 0 0 6vw;
-    color: #555555;
+    color: #12516e;
 }
 
 .descripcion-item {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     margin: 1vw 0 0 6vw;
-    color: #585858;
+    color: #dfdfdf;
     text-align: justify;
     max-width: 35vw;
 }
 
-.precio-item {
-    font-size: 3vw;
-    margin: 1vw 0 0 20vw;
+.item-compra-base {
+    font-size: 5vw;
+    margin: 2vw auto auto auto;
     background: linear-gradient(180deg, #357a38, #8381c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.item-oferta {
+    font-size: 5vw;
+    animation: precioRebote 1s ease infinite;
+    margin: 2vw auto auto auto;
+    background: linear-gradient(180deg, #357a38, #8381c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.item-compra-oferta {
+    font-size: 2vw;
+    text-decoration: line-through;
+    margin: 0 0 0 2vw;
+    background: linear-gradient(180deg, #8a0000, #140000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
